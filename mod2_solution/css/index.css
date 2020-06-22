@@ -1,0 +1,56 @@
+ .row{
+            width: 100%;
+            }
+    .col{
+            background-color: gray;
+            margin: 5px;
+            padding: 0px 0px 3px 2px;
+            border: 2px solid black;
+            height: 200px;
+            }
+      #div1{
+  background-color: #d97777;
+  }
+#div2{
+  background-color: #d60909;
+  }
+#div3{
+  background-color: #f2f420;
+  }
+    h2{
+      text-align: center;
+    }  
+     .head{
+       background-color: green;
+       text-align: right;
+       padding-right: 8px;
+       width: 20%;
+       position: relative;
+       top: 0px;
+       right: 0px;
+       float: right;
+       border: 2px solid black;
+     
+     }
+      @media (min-width: 992px){
+              .col{
+                      width: 30%;
+                      float: left;
+                      }
+              }
+        @media (min-width: 768px) and (max-width:991px){
+              .col{
+                      width: 45%;
+                      float: left;
+                      }
+               .col-md{
+                    width: 92%;
+               }
+              }    
+      @media (max-width: 767px){
+              .col{
+                      width: 98%;
+                      clear: left;
+                      }
+                }
+   

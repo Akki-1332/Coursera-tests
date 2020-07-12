@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>location</title>
-</head>
 <body>
 
-<h1>hello let's trace your location</h1>
-<button onclick="getLocation()">get location</button>
-<div id-"output"></div>
+<p>Click the button to get your coordinates.</p>
 
+<button onclick="getLocation()">Try It</button>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js">
-  </script>
+<p id="demo"></p>
 
- <script>
- var x = document.getElementById('output');
-function getLocation(){
-  if(navigator.geolocation){
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-  }
-  else{
-    x.innerHTML = "Not Supporting";
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-function showPosition(position){
-  x.innerHTML = "latitude = "+position.coords.latitude;
-  x.innerHTML += "<br />"
-  x.innerHTML = "longitude = "+position.coords.longitude;
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
 }
 </script>
 
 </body>
 </html>
+

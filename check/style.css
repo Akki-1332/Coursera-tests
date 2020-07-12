@@ -35,7 +35,7 @@ button:hover {
         cursor: pointer;
         color: red;
         width: 30%;
-        height: 80px;
+        height: 150px;
         transition: 1s;
         position: relative;
         top: 100px;
